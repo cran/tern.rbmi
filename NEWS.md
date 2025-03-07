@@ -1,3 +1,7 @@
+# `tern.rbmi` 0.1.5
+
+* Adding `V8` to suggests.
+
 # `tern.rbmi` 0.1.4
 
 * CRAN release.

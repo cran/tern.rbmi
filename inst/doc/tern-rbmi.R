@@ -1,5 +1,5 @@
 ## ----setup, include = FALSE---------------------------------------------------
-suggested_dependent_pkgs <- c("rstan")
+suggested_dependent_pkgs <- c("rstan", "V8")
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 )
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  vignette(topic = "quickstart", package = "rbmi")
+# vignette(topic = "quickstart", package = "rbmi")
 
 ## -----------------------------------------------------------------------------
 library(tern.rbmi)
@@ -88,7 +88,7 @@ draws_vars <- rbmi::set_vars(
 draws_vars$subjid <- "TMP_ID"
 
 ## -----------------------------------------------------------------------------
-draws_method <- method_bayes()
+draws_method <- rbmi::method_bayes()
 
 draws_obj <- rbmi::draws(
   data = data_full,
